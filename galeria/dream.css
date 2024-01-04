@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.dream-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(173, 216, 230, 0.8), rgba(255, 255, 255, 0.5)), url('dream_background.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dream-content {
+    color: #333;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.goback {
+    display: block;
+    margin-top: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.goback:hover{
+    background-color: #000;
+    color: white
+  }

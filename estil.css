@@ -12,23 +12,14 @@ body {
     color: #fff;
   }
   
-  .cave {
+  .cova {
     position: relative;
     height: 100vh;
     overflow-y: auto; /* Add a vertical scrollbar when content overflows */
     background-color: #000;
   }
   
-  .entrance {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 10%;
-    height: 50%;
-    background: linear-gradient(to right, transparent, #000);
-  }
-  
-  .content-wrapper {
+  .embolcall {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -37,25 +28,29 @@ body {
     margin-bottom: 80px; /* Add bottom margin to accommodate the footer */
   }
 
-  .title-container {
+  .contenidor-titol {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  .title-container h2 {
+  .contenidor-titol h2 {
     font-style: italic;
     font-size: 1.2em;
   }  
 
-  .content {
+  .contingut {
     position: relative;
     flex: 0 0 45%;
     margin: 10px;
     padding: 20px;
-    background-color: #333;
+    background-color: #6e4343;
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
+  }
+
+  .contingut:hover {
+    background-color: #333;
   }
   
   h1 {
@@ -72,7 +67,11 @@ body {
     font-size: 1em;
   }
 
-  .box-image {
+  a {
+    color: #fff;
+  }
+
+  .capsa-img {
     width: 100%;
     max-height: 150px; /* Adjust the maximum height as needed */
     object-fit: cover;
@@ -81,17 +80,17 @@ body {
   }
   
   /* Rotate image on hover */
-  .content:hover .box-image {
+  .contingut:hover .capsa-img {
     transform: rotate(360deg);
   }
 
   @media (max-width: 768px) {
-    .content {
+    .contingut {
       flex: 0 0 100%; /* Full width on small screens */
     }
   }
   
-  .round-footer {
+  .peu-rodo {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -105,7 +104,7 @@ body {
     padding: 0 20px; /* Add padding for better spacing*/ 
   }
 
-  .footer-left p {
+  .peu-esq p {
     margin: 0;
   }
   

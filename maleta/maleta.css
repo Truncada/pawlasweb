@@ -1,45 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #3498db; /* Blue background */
+    background-color: #3498db;
   }
 
-  .header {
-    background-color: #95a5a6; /* Grey strip */
+  header {
+    background-color: #95a5a6;
     padding: 10px;
     text-align: left;
   }
 
-  .header a {
+  header a {
     color: #fff;
     text-decoration: none;
   }
 
-  .header:hover {
+  header:hover {
     background-color: #000;
   }
 
-  .title-container {
+  .contenidor-titol {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
 
-  .title-container h1 {
+  .contenidor-titol h1 {
     color: #fff;
   }
 
-  .suitcase {
-    width: 70%;
+  .embolcall {
+    width: 80%;
     margin: 50px auto;
-    background-color: #8b4513; /* Brown */
+    background-color: #8b4513;
     border: 10px solid #635242;
     border-radius: 10px;
     padding: 20px;
     position: relative;
   }
 
-  .handle {
-    width: 150px;
+  .nansa {
+    width: 160px;
     height: 60px;
     background-color: #635242;
     position: absolute;
@@ -50,8 +56,8 @@ body {
     border-top-right-radius: 75px;
   }
 
-  .compartment {
-    background-color: #d2b48c; /* Tan */
+  .apartat {
+    background-color: #d2b48c; 
     border: 1px solid #ccc;
     margin-bottom: 20px;
     position: relative;
@@ -62,35 +68,32 @@ body {
     color: #fff;
     padding: 10px;
     position: absolute;
-    top: 50%;
     right: 20px;
-    transform: translateY(-50%) rotate(-90deg); /* Rotate the label vertically */
-    transform-origin: 100% 50%; /* Set the rotation origin to the right center */
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: 100% 50%; /* Orígen de rotació, centre-dreta xd */
     border-radius: 5px;
   }
 
-  .label.music {
-    background-color: #cd853f; /* Peru */
+  .label.musica {
+    background-color: #cd853f; 
   }
-
-  .label.books {
-    background-color: #808000; /* Olive */
+  .label.llibres {
+    background-color: #808000; 
   }
-
   .label.film {
-    background-color: #2e8b57; /* SeaGreen */
+    background-color: #2e8b57; 
   }
 
-  .compartment h2,
-  .compartment p {
+  .apartat h2,
+  .apartat p {
     padding: 20px;
   }
 
-  .compartment {
-    width: calc(70% - 20px); /* Adjusted width to include padding */
+  .apartat {
+    width: calc(70% - 20px); 
   }
 
-  .image-container {
+  .capsa-img {
     position: absolute;
     top: 0;
     right: 0;
@@ -99,30 +102,53 @@ body {
     overflow: hidden;
   }
 
-  .suitcase img {
-    width: 85%;
-    height: 90%;
+  .embolcall img {
+    width: 90%;
+    height: 97.5%;
     object-fit: cover;
-    margin-bottom: 20px;
     padding: 20px;
   }
 
-  /* Font styles for each compartment */
-  .compartment h2 {
+  .boto-toggle {
+    cursor: pointer;
+    background-color: #ffffff51;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin-top: 10px;
   }
 
-  .label.music,
-  .compartment.music {
+  .label.musica,
+  .apartat.musica {
     font-family: "Courier New", Courier, monospace;
   }
-
-  .label.books,
-  .compartment.books {
+  .label.llibres,
+  .apartat.llibres {
     font-family: "Comic Sans MS", cursive, sans-serif;
   }
-
   .label.film,
-  .compartment.film {
+  .apartat.film {
     font-family: "Arial", sans-serif;
   }
+
+  .contingut-amagat {
+    display: none;
+  }
+
+    /* Pantalletes */
+    @media (max-width: 768px) {
+      .embolcall {
+        width: 100%;
+      }
+    
+      .apartat h2,
+      .apartat p {
+        font-size: 14px; 
+        padding: 10px;
+      }
+    
+      .label {
+        font-size: 12px;
+      }
+    }

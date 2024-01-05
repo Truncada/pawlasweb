@@ -15,7 +15,7 @@ body {
   .cova {
     position: relative;
     height: 100vh;
-    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+    overflow-y: auto; /* Scroll */
     background-color: #000;
   }
   
@@ -25,7 +25,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    margin-bottom: 80px; /* Add bottom margin to accommodate the footer */
+    margin-bottom: 80px; /*Espai peu*/
   }
 
   .contenidor-titol {
@@ -73,20 +73,21 @@ body {
 
   .capsa-img {
     width: 100%;
-    max-height: 150px; /* Adjust the maximum height as needed */
+    max-height: 150px; 
     object-fit: cover;
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
   }
   
-  /* Rotate image on hover */
+  /* Wiiiiii */
   .contingut:hover .capsa-img {
     transform: rotate(360deg);
   }
 
+   /* Pantalletes */  
   @media (max-width: 768px) {
     .contingut {
-      flex: 0 0 100%; /* Full width on small screens */
+      flex: 0 0 100%;
     }
   }
   
@@ -101,7 +102,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Add padding for better spacing*/ 
+    padding: 0 20px;
   }
 
   .peu-esq p {
@@ -112,8 +113,8 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use flex to center the social links */
-    align-items: center; /* Vertically center the social links */
+    display: flex;
+    align-items: center;
   }
   
   .social-links li {
@@ -132,5 +133,5 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; /* Fix for Mozilla to properly display images */
+    display: block; /*Mozilla l'ha de llegir com a block aparentment*/
   }

@@ -3,41 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suitcase Page</title>
+    <title>Maleta</title>
     <link rel="stylesheet" href="maleta.css">
+    <script defer src="../script.js"></script>  
   </head>
   <body>
-    <div class="header">
+    <header>
       <a href="../index.html">Torna a la cova</a>
-    </div>
+    </header>
 
-    <div class="title-container">
+    <div class="contenidor-titol">
       <h1>Maletín, maletón</h1>
     </div>
 
-    <div class="suitcase">
-      <div class="handle"></div>
+    <div class="embolcall">
+      <div class="nansa"></div>
 
-      <div class="compartment music">
-        <div class="label music">Music</div>
-        <h2>Favorite Songs</h2>
-        <p>Playlist for the journey</p>
+      <div class="apartat musica">
+        <div class="label musica">Música</div>
+        <h2>Música</h2>
+        <p>Black as the sky - Transatlantic, Generation - tripleS, Rising - tripleS, Paranoid Android - Radiohead, No surprises - Radiohead, Dumb - Todrick Hall, Hey - Next to normal, La sevillana - Josep Escofet, Good vibrations - The Beach Boys, Stairs - Lee Jin Ah, Lady Fantasy - Camel, Cornfield Chase - Hans Zimmer...</p>
+        <p class="recomanacions contingut-amagat">Pantomime - WJSN, Don't stop me now - Queen, Hard out here - Lilly Allen, Octopus's garden - The Beatles, Hey Bulldog - The Beatles, Rookie - Red Velvet, Sultans of swing - Dire Straits, Easy to love - Ella Fitzgerald, El mundo al revés - Maria Isabel, Dynasties & Dystopia - Denzel Curry, Gizzle, Bren Joy, Santé - Stromae, Superesmorza - Super3, Superhuman - NCT 127, L'avi Simitarra - El Pony Pisador, Rondo alla Turca - Mozart, Eat Shiitake Mushrooms - Let's Eat Grandma, Supersticious - Stevie Wonder, Castle on the hill - Ed Sheeran, Som - Cybee, Alegre i encantada- Txarango, After School - Weeekly, Swimming - Jonathan Larson, Odd eye - Dreamcatcher, Demian - Dreamcatcher, My Way (～この道の先へ～) - Dreamcatcher, Les quatre banderes - Gaizca Project, Chula para Manu - Inxa Impro Quartet, Tell Me A Joke (说个笑话) - Silence Wang&Shaking, Flamenco Sketches - Miles Davis, El preso n9 - Roberto Cantoral, Glasses - IU, Guren no yumiya - Linked Horizon, Tis the season - Barlow&Bear, Sincerely, me - Dear Evan Hansen, Summer Montage/Madeline - Justin Hurwitz, Herman's habit - Justin Hurwitz, Caravan - Duke Ellington&Juan Tizol, Era tan bon home - Pere Tàpias, Dante's bones - Scott Jarrett...<br><br>
+          24 rumbes per diatònic - Carles Belda, The Billage of Perception: Chapter Two - Billlie, Sgt. Pepper's Lonely Hearts Club Band - The Beatles, Magical Mystery Tour - The Beatles, Estopa - Estopa, I've - Ive, KID A MNESIA - Radiohead, Savage - aespa, Viratges - Canya d'or, A night at the opera - Queen, Demon days - Gorillaz, Adala - Klima, The Chaos Chapter: FIGHT OR ESCAPE - TXT, Fans del sol - Oques grasses, A tope amb la vida - Oques grasses, SOUR - Olivia Rodrigo, Love Yourself 轉 Tear - BTS, Map of the Soul: 7 - BTS, Temerario - Itaca Band, Entre poetas y presos - La Raíz, Mini world - Indila, Feel My Rhythm - Red Velvet, Benvingut al paradís - Obrint Pas, Love·Hate - Meng Meiqi, Llepolies - Zoo, This is acting - Sia, Lilac - IU...  </p>
+        <button class="boto-toggle" onclick="toggleContent(this)">Més recomanacions</button>
       </div>
 
-      <div class="compartment books">
-        <div class="label books">Books</div>
-        <h2>Reading List</h2>
-        <p>Books to read during the trip</p>
+      <div class="apartat llibres">
+        <div class="label llibres">Llibres</div>
+        <h2>Lectures</h2>
+        <p>Hitchkicker's guide to the galaxy - Douglas Adams, Els viatges de Gulliver - Jonathan Swift, Le petit prince - Antoine de Saint-Exupéry, Frankenstein; or, The Modern Prometheus - Mary Shelley, Cien años de soledad - Gabriel García Márquez, 1984 - George Orwell, Les dotze direccions del vent - Ursula K. Le Guin, Little Women - Louisa May Alcott...</p>
+        <p class="recomanacions contingut-amagat">The Death and Life of Great American Cities - Jane Jacobs, Lurking: How a Person Became a User - Joanne McNeil, Sapiens: A Brief History of Humankind - Yuval Noah Harari, A Room of One's Own - Virginia Woolf...</p>
+        <button class="boto-toggle" onclick="toggleContent(this)">Més recomanacions</button>
       </div>
 
-      <div class="compartment film">
+      <div class="apartat film">
         <div class="label film">Film</div>
-        <h2>Movie Picks</h2>
-        <p>Must-watch films for the trip</p>
+        <h2>Films</h2>
+        <p>Interestellar, La la land, El viatge de Chihiro, Tick tick boom, The snow queen (1957), El castell ambulant, Del revés, Divergent, Peter Pan: La gran aventura...</p>
+        <p class="recomanacions contingut-amagat">Avatar: l'últim mestre de l'aire, The last of us, Verano azul, Arcane, Polseres vermelles, Phineas And Ferb...</p>
+        <button class="boto-toggle" onclick="toggleContent(this)">Més recomanacions</button>
       </div>
 
-      <div class="image-container">
-        <img src="img/1.png" alt="Suitcase Image" />
+      <div class="capsa-img">
+        <img src="img/1.png" alt="Roba" />
       </div>
     </div>
   </body>
